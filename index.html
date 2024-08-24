@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        #citySelector {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #2c3e50;
+            font-size: 1em;
+        }
+        #prayerTimes {
+            list-style: none;
+            padding: 0;
+        }
+        #prayerTimes li {
+            background-color: #ecf0f1;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
+            color: #34495e;
+        }
+        #prayerTimes li:nth-child(odd) {
+            background-color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prayer Times</h1>
+    <label for="citySelector">Choose a city:</label>
+    <select id="citySelector">
+        <option value="Makkah">Makkah</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Dubai">Dubai</option>
+        <!-- Add more cities as needed -->
+    </select>
+    <ul id="prayerTimes">
+        <!-- Prayer times will be displayed here -->
+    </ul>
+
+    <script src="./challange.js"></script>
+</body>
+</html>
